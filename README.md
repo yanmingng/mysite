@@ -1,5 +1,5 @@
 [Ng Yan Ming] - Personal Portfolio
-🚀 Live Site: https://yanmingng.github.io/mysite/
+🚀 Live Site: https://www.ngyanming.com/
 
 📌 About This Project:
 This is my personal portfolio website, built from scratch to showcase my skills, projects, and background in web design and business marketing. It serves as both a resume and a platform for potential employers or clients to learn more about me.
@@ -17,7 +17,7 @@ Flexbox & Grid for Layout
 Media Queries for Responsiveness
 
 📂 How to Use:
-Visit https://yanmingng.github.io/mysite/ to view the live site.
+Visit https://www.ngyanming.com/ to view the live site.
 Navigate through the sections using the header menu.
 Click on portfolio items to explore project details.
 
