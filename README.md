@@ -11,10 +11,10 @@ Portfolio Showcase – Displays my best work with case studies and reflections. 
 Dark Mode Support – Adapts to user preferences for dark or light mode. <br>
 GitHub Pages Hosting – Deployed and maintained through GitHub Pages.
 
-🛠 Technologies Used:
-HTML, CSS, JavaScript
-Flexbox & Grid for Layout
-Media Queries for Responsiveness
+🛠 Technologies Used: <br>
+HTML, CSS, JavaScript <br>
+Flexbox & Grid for Layout <br>
+Media Queries for Responsiveness 
 
 📂 How to Use:
 Visit https://www.ngyanming.com/ to view the live site.
