@@ -2,7 +2,7 @@
 🚀 Live Site: https://www.ngyanming.com/
 
 📌 About This Project:
-This is my personal portfolio website, built from scratch to showcase my skills, projects, and background in web design and business marketing. It serves as both a resume and a platform for potential employers or clients to learn more about me.
+This is my personal portfolio website, built from scratch to showcase my skills, projects, and background in web design and business marketing. 
 
 🎨 Features:
 Responsive Design – Optimized for desktop, tablet, and mobile devices.
