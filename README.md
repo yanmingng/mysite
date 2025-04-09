@@ -4,11 +4,11 @@
 📌 About This Project:
 This is my personal portfolio website, built from scratch to showcase my skills, projects, and background in web design and business marketing. 
 
-🎨 Features:
+🎨 Features: <br>
 Responsive Design – Optimized for desktop, tablet, and mobile devices. <br>
-Accessible & Interactive – Designed with accessibility in mind, including keyboard navigation and alternative text for images.
-Portfolio Showcase – Displays my best work with case studies and reflections.
-Dark Mode Support – Adapts to user preferences for dark or light mode.
+Accessible & Interactive – Designed with accessibility in mind, including keyboard navigation and alternative text for images. <br>
+Portfolio Showcase – Displays my best work with case studies and reflections. <br>
+Dark Mode Support – Adapts to user preferences for dark or light mode. <br>
 GitHub Pages Hosting – Deployed and maintained through GitHub Pages.
 
 🛠 Technologies Used:
