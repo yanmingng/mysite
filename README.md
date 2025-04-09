@@ -5,7 +5,7 @@
 This is my personal portfolio website, built from scratch to showcase my skills, projects, and background in web design and business marketing. 
 
 🎨 Features:
-Responsive Design – Optimized for desktop, tablet, and mobile devices.
+Responsive Design – Optimized for desktop, tablet, and mobile devices. <br>
 Accessible & Interactive – Designed with accessibility in mind, including keyboard navigation and alternative text for images.
 Portfolio Showcase – Displays my best work with case studies and reflections.
 Dark Mode Support – Adapts to user preferences for dark or light mode.
