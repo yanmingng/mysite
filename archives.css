@@ -1,0 +1,109 @@
+.archives {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 20px;
+    background-color: #fff;
+  }
+  
+  .project-section {
+    width: 100%;
+    max-width: 900px; /* control the content width */
+    margin-bottom: 80px;
+    text-align: center;
+  }
+  
+  .content-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  .project-section h1 {
+    font-family: "Marcellus", serif;
+    font-size: 2rem;
+    margin-bottom: 10px;
+  }
+  
+  .project-section h2 {
+    font-size: 1.2rem;
+    font-weight: normal;
+    color: #555;
+    margin-bottom: 20px;
+  }
+  
+  .project-section p {
+    font-family: "Marcellus", serif;
+    font-size: 1rem;
+    line-height: 1.6;
+    text-align: left;
+    max-width: 800px;
+    margin: 0 auto; /* centers the block inside the section */
+    white-space: normal; /* ensures no cutting due to white-space rules */
+    word-break: normal;  /* allows words to wrap naturally */
+  }
+  
+  .project-section video,
+  .project-section img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  }
+
+  .back-to-top {
+    display: inline-block;
+    position: relative;
+    float: right;
+    margin-top: 20px;
+    font-family: "Marcellus";
+    font-size: 1rem;
+    text-decoration: none;
+    color: #000;
+}
+
+/* ========= Responsive Styles for Archives Section ========= */
+
+/* Tablet View (768px and below) */
+@media (max-width: 768px) {
+  .project-section p {
+    text-align: center;
+    font-size: 0.95rem;
+  }
+
+  .back-to-top {
+    float: none;
+    display: block;
+    margin: 20px auto 0 auto;
+    text-align: center;
+  }
+}
+
+/* Mobile View (480px and below) */
+@media (max-width: 480px) {
+  .archives {
+    padding: 30px 10px;
+  }
+
+  .project-section {
+    margin-bottom: 60px;
+  }
+
+  .project-section h1 {
+    font-size: 1.6rem;
+  }
+
+  .project-section h2 {
+    font-size: 1rem;
+  }
+
+  .project-section p {
+    font-size: 0.9rem;
+    padding: 0 10px;
+  }
+
+  .back-to-top {
+    font-size: 0.9rem;
+  }
+}

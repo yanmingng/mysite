@@ -1,0 +1,138 @@
+.projects-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 columns */
+    grid-auto-rows: auto; /* Let rows size based on content */
+    gap: 40px; /* More breathing space between cards */
+    padding: 40px 0;
+    list-style: none;
+    margin: 0 auto;
+    max-width: 1200px; /* Centers the grid nicely on larger screens */
+}
+
+.project-header {
+    font-family: "Marcellus";
+    color: #000;
+    text-decoration: none;
+}
+
+.project-header h1 {
+    font-weight: normal;
+}
+
+.project-card {
+    background-color: #fff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.05);
+    transition: all 0.5s ease;
+}
+
+.project-card:hover {
+    transform: scale(1.05); 
+}
+
+.project-card img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+}
+
+.project-card h3 {
+    font-family: "Marcellus";
+    font-size: 1rem;
+    font-weight: normal;
+    color: #555;
+    padding: 0.75rem 1rem 1rem;
+    margin: 0;
+}
+
+.project-card a {
+    text-decoration: none;
+    color: inherit; 
+}
+
+/* ========= Responsive Styles for Projects Grid ========= */
+
+/* Tablet View (768px and below) */
+@media (max-width: 768px) {
+    .projects-grid {
+      grid-template-columns: 1fr; /* Stack cards in a single column */
+      gap: 30px;
+      padding: 30px 0;
+    }
+  
+    .project-card {
+      max-width: 500px;
+      margin: 0 auto; /* Center the card */
+    }
+  }
+  
+  /* Mobile View (480px and below) */
+  @media (max-width: 480px) {
+    .projects-container {
+      padding: 30px 10px;
+    }
+  
+    .project-header h1 {
+      font-size: 1.8rem;
+    }
+  
+    .projects-grid {
+      gap: 20px;
+    }
+  
+    .project-card h3 {
+      font-size: 0.95rem;
+      padding: 0.5rem 0.8rem 0.8rem;
+    }
+  }
+  
+  .project-image-full {
+    margin: 3rem auto;
+    max-width: 1000px;
+    padding: 0 1rem;
+    text-align: center;
+  }
+  
+  .project-image-full img {
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  .project-inline-image {
+    max-width: 800px; /* narrower than container */
+    margin: 3rem auto; /* center it */
+    padding: 0 1rem;
+    text-align: center;
+  }
+  
+  .project-inline-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .project-inline-image {
+      max-width: 90%; /* slightly shrink for tablet */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .project-inline-image {
+      max-width: 100%; /* full width on mobile */
+    }
+  }
+  
+  
