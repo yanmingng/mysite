@@ -7,9 +7,7 @@ This is my personal portfolio website, built from scratch to showcase my skills,
 🎨 Features: <br>
 Responsive Design – Optimized for desktop, tablet, and mobile devices. <br>
 Accessible & Interactive – Designed with accessibility in mind, including keyboard navigation and alternative text for images. <br>
-Portfolio Showcase – Displays my best work with case studies and reflections. <br>
-Dark Mode Support – Adapts to user preferences for dark or light mode. <br>
-GitHub Pages Hosting – Deployed and maintained through GitHub Pages.
+Portfolio Showcase – Displays my best work in the field of marketing.
 
 🛠 Technologies Used: <br>
 HTML, CSS, JavaScript <br>
