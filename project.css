@@ -172,6 +172,12 @@
     text-align: center;
   }
 
+  .project-info img {
+    width: 90%;
+    margin: 0 auto;
+    display: block;
+  }
+
   .cta-content {
     text-align: center;
     align-items: center;
@@ -195,6 +201,12 @@
 
   .project-scope ul {
     font-size: 0.9rem;
+  }
+
+  .project-info img {
+    width: 100%;
+    margin: 0 auto;
+    display: block;
   }
 
   .cta-content p {
