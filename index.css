@@ -326,26 +326,7 @@ footer {
 
 /* =============== RESPONSIVE - MOBILE 480px =============== */
 @media (max-width: 480px) {
-    /* Navbar */
-    nav ul {
-      flex-direction: column;
-      gap: 10px;
-      padding: 10px;
-    }
-    
-    nav ul li {
-      margin: 0.5em 0;
-    }
-  
-    nav ul li a, nav ul li button {
-      font-size: 0.9rem;
-    }
-  
-    nav ul li a img {
-      height: 45px;
-    }
-  
-    /* Hero Section */
+/* Hero Section */
     #hero {
       flex-direction: column;
       padding: 40px 20px;
