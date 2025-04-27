@@ -1,0 +1,218 @@
+.about-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+  
+.about-content {
+    display: flex;
+    align-items: flex-start;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.about-container h1 {
+    font-family: "Marcellus";
+    font-weight: normal;
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.about-text {
+    flex: 1 1 50%;
+    font-family: "Marcellus";
+    font-size: 1.1rem;
+    line-height: 1.8;
+}
+  
+.about-image {
+    flex: 1 1 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+  
+.about-image img {
+    max-width: 100%;
+    height: auto;
+}
+
+#about {
+    border-bottom: 1px solid #D9D9D9;
+}
+
+#experiences {
+    padding: 60px 20px;
+    text-align: center;
+    border-bottom: 1px solid #D9D9D9;
+  }
+  
+  #experiences h1 {
+    font-family: "Marcellus";
+    font-weight: normal;
+    font-size: 36px;
+    margin-bottom: 40px;
+  }
+  
+  #experiences h2 {
+    font-family: "Marcellus";
+    font-weight: normal;
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .experiences-education,
+  .experiences-professional {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  #experiences ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+    max-width: 1500px; /* prevent it from being too wide */
+}
+
+#experiences li figure {
+    text-align: center;
+}
+
+#experiences li img {
+    height: 160px; /* Fixed height for all images */
+    width: auto;   /* Automatically adjust width to keep aspect ratio */
+    transition: transform 0.3s ease;
+    object-fit: contain; /* Ensures image fits nicely without distortion */
+}
+
+#experiences li img:hover {
+    transform: scale(1.1);
+}
+
+#experiences figcaption {
+    font-family: "Marcellus";
+    font-weight: normal;
+    margin-top: 10px;
+    font-size: 16px;
+    color: #000;
+}
+
+.interests {
+    text-align: center;
+}
+
+.interests h1 {
+    font-family: "Marcellus";
+    font-weight: normal;
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.interests p {
+    font-family: "Marcellus";
+    font-weight: normal;
+    font-size: 1.1rem
+}
+
+.interests img {
+    height: 350px; /* Fixed height for all images */
+    width: auto;   /* Automatically adjust width to keep aspect ratio */
+    transition: transform 0.3s ease;
+    object-fit: contain; /* Ensures image fits nicely without distortion */
+    border-radius: 30px;
+}
+
+.interests img:hover {
+    transform: scale(1.05);
+}
+
+.interest-gallery {
+    display: flex;
+    justify-content: space-between; /* Even spacing */
+    gap: 10px; /* Adjust spacing as needed */
+    max-width: 1000px; /* Match this to your text width */
+    margin: 30px auto; /* Center it horizontally */
+    flex-wrap: wrap; /* Ensures responsiveness */
+}
+
+/* ========= Responsive Styles ========= */
+
+/* Tablet View (768px and below) */
+@media (max-width: 768px) {
+    .about-content {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+  
+    .about-text, 
+    .about-image {
+      flex: 1 1 100%;
+    }
+  
+    #experiences ul {
+      gap: 20px; /* Reduce gap between logos */
+    }
+  
+    #experiences li img {
+      height: 120px; /* Slightly smaller logos */
+    }
+  
+    .interest-gallery {
+      justify-content: center;
+      gap: 20px;
+    }
+  
+    .interests img {
+      height: 250px; /* Smaller images */
+    }
+  }
+  
+  /* Mobile View (480px and below) */
+  @media (max-width: 480px) {
+    .about-container {
+      padding: 1rem;
+    }
+  
+    .about-container h1,
+    #experiences h1,
+    .interests h1 {
+      font-size: 28px;
+    }
+  
+    .about-text {
+      font-size: 1rem;
+      line-height: 1.6;
+    }
+  
+    #experiences ul {
+      flex-direction: column;
+      gap: 15px;
+    }
+  
+    #experiences li img {
+      height: 100px;
+    }
+  
+    .interests p {
+      font-size: 1rem;
+      padding: 0 10px;
+    }
+  
+    .interest-gallery {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .interests img {
+      height: 220px;
+      border-radius: 20px;
+    }
+  }
+  
