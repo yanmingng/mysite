@@ -4,11 +4,6 @@
 📌 About This Project:
 This is my personal portfolio website, built from scratch to showcase my skills, projects, and background in business marketing. 
 
-🛠 Technologies Used: <br>
-HTML, CSS, JavaScript <br>
-Flexbox & Grid for Layout <br>
-Media Queries for Responsiveness 
-
 📂 How to Use:
 Visit https://www.ngyanming.com/ to view the live site.
 Navigate through the sections using the header menu.
