@@ -1,0 +1,466 @@
+@import url('https://fonts.googleapis.com/css2?family=Marcellus&display=swap');
+html {
+    font-size: 100%; /* Maintain browser's default size */
+    scroll-behavior: smooth;
+}
+body {
+    cursor: url('images/shovel.png'), auto; /* Shovel cursor effect */
+}
+html, body {
+    overflow-x: hidden; /* Prevent unwanted horizontal scroll */
+}
+
+/* =============== NAVBAR =============== */
+nav {
+    height: 70px;
+    width: 100%; 
+    position: sticky;
+    z-index: 1000;
+    background-color: white;
+    font-family: 'Marcellus';
+    text-decoration: none;
+}
+
+/* List Styles */
+nav ul {
+    list-style: none;
+    display: flex; /*Flex container*/
+    justify-content: space-between; /* Ensures nav items are spaced evenly */
+    width: 100%; /* Ensure it stretches */
+    align-items: center; /*Vertically center items*/
+    margin: 0; /*Removes default margin */
+    padding: 5px;
+    box-sizing: border-box;
+    border-bottom: 1px solid #D9D9D9;
+}
+
+/* List Items */
+nav ul li {
+    margin: 0 1em; 
+}
+
+/* Logo */
+nav ul li:first-child {
+    margin-right: auto; /* Logo left, others right */
+}
+
+nav ul li a img {
+    height: 55px; 
+}
+
+/* Links */
+nav ul li a {
+    text-decoration: none;
+    color: #000;
+    font-size: 1rem;
+    font-weight: 100;
+    position: relative; /* Ensure underline positions correctly */
+}
+
+/* Contact Button */
+nav ul li button {
+    background: none;
+    font-family: 'Marcellus';
+    color: #000;
+    font-size: 1rem;
+    padding: 8px 15px;
+    border: 1px solid #000;
+    border-radius: 90px;
+    cursor: pointer;
+}
+
+nav ul li {
+    transition: all 0.3s ease;
+}
+nav ul li:hover {
+    transform: scale(1.1); 
+}
+
+/* Underline effect when hovered upon */
+nav a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -5px; 
+  width: 100%;
+  height: 2px;
+  background-color: #91972A;
+  transform: scaleX(0); /* Hidden by default */
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Reveal underline on hover/focus */
+nav a:hover::after,
+nav a:focus::after {
+  transform: scaleX(1); 
+}
+
+nav a.active {
+    color: #91972A; /* or any color you want to highlight with */
+    font-weight: normal;
+  }
+
+/* =============== HERO SECTION =============== */
+#hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 60px 150px;
+    gap: 40px;
+    flex-wrap: wrap; /* allows stacking on smaller screens */
+    color: #000;
+    background-image: url('images/bg.gif');
+    background-size: cover;
+}
+
+/* When the section is in view */
+#hero.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Move content up */
+#hero header {
+    flex: 1;
+    max-width: 600px;
+    margin-left: 50px;
+}
+
+/* Main title styling */
+#hero h1 {
+    font-family: "Marcellus";
+    font-size: 3.8rem;
+    font-weight: normal;
+    line-height: 0.8;
+}
+
+.a {
+    font-size: 2rem; /* smaller than 4rem */
+    color: #000;
+    padding-right: 1px;
+}
+
+.highlight {
+    font-size: 2rem; /* smaller than 4rem */
+    color: #91972A;
+    padding-left: 1px;
+}
+
+#hero h2 {
+    font-family: "Marcellus";
+    font-size: 2rem;
+    font-weight: normal;
+    line-height: 1.2;
+    position: relative;
+}
+
+/* Button styling */
+.resume-btn {
+    background: none;
+    font-family: "Marcellus";
+    text-decoration: none;
+    color: #000;
+    font-size: 1.2rem;
+    font-weight: 100;
+    padding: 0.5rem 3rem;
+    border: 1px solid #000;
+    border-radius: 90px;
+    transition: all 0.3s ease;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.resume-btn:hover {
+    transform: scale(1.1); 
+}
+
+.home-image {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+}
+  
+.home-image img {
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+    border-radius: 90px;
+    box-shadow: 20px 20px 5px rgba(0, 0, 0, 0.15);
+}
+
+/* =============== SKILLSETS SECTION =============== */
+.skillsets-section {
+    background-color: none; 
+    padding: 50px 0;
+    border-top: 1px solid #D9D9D9;
+    padding-top: 100px; 
+    padding-bottom: 100px;
+}
+
+/* Style Skillsets heading and paragraph */
+.skillsets-section h1 {
+    color: #000;
+    text-align: center;
+    font-family: "Marcellus";
+    font-size: 3rem;
+    font-weight: normal;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+.skillsets-section p {
+    color: #000;
+    text-align: center;
+    font-family: "Marcellus";
+    font-size: 1.25rem;
+    font-weight: normal;
+    margin-bottom: 30px;
+    margin-top: 5px;
+}
+
+/* Skillset icons container */
+.skillsets-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 55px;
+    flex-wrap: wrap;
+}
+
+/* Style skillset icons */
+.skillsets-icons img {
+    width: 80px; /* Adjust icon size */
+    height: 80px; /* Ensures uniform height */
+    object-fit: contain; /* Ensures the entire logo is visible without cropping */
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+/* Fade-in effect when visible */
+.skillsets-icons img.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Add a staggered effect for a smooth transition */
+.skillsets-icons img:nth-child(1) { transition-delay: 0.1s; }
+.skillsets-icons img:nth-child(2) { transition-delay: 0.2s; }
+.skillsets-icons img:nth-child(3) { transition-delay: 0.3s; }
+.skillsets-icons img:nth-child(4) { transition-delay: 0.4s; }
+.skillsets-icons img:nth-child(5) { transition-delay: 0.5s; }
+.skillsets-icons img:nth-child(6) { transition-delay: 0.6s; }
+.skillsets-icons img:nth-child(7) { transition-delay: 0.7s; }
+.skillsets-icons img:nth-child(8) { transition-delay: 0.8s; }
+.skillsets-icons img:nth-child(9) { transition-delay: 0.9s; }
+
+/* Fade-in animation */
+@keyframes fadeInBody {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  body {
+    opacity: 0;
+    animation: fadeInBody 1.2s ease-out forwards;
+    overflow-x: hidden;
+  }
+
+/* Hover effect */
+.skillsets-icons img:hover {
+    transform: scale(1.2);
+    transition: transform 0.3s ease-out;
+}
+
+/* =============== FOOTER SECTION =============== */
+footer {
+    background-color: #FFF;
+    color: #000;
+    font-family: "Marcellus";
+    text-align: center;
+    padding: 5px 20px 10px;
+    width: 100%;
+    margin-top: 10px;
+    border-top: 1px solid #D9D9D9;
+}
+
+/* Footer Container - now vertically aligned */
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1px;
+}
+
+/* Copyright Text */
+.footer-text {
+    font-size: 14px;
+    color: #000;
+    margin: 10px 0;
+}
+
+/* Footer Icons */
+.footer-icons {
+    display: flex;
+    gap: 10px;
+}
+
+.footer-icons a {
+    display: inline-block;
+    margin: 0 3px;
+}
+
+.footer-icons img {
+    width: 25px;
+    height: auto;
+}
+
+  /* =============== RESPONSIVE - TABLET 768px =============== */
+  @media (max-width: 768px) {
+    /* Hero Section */
+    #hero {
+      flex-direction: column;
+      padding: 50px 50px;
+      gap: 30px;
+      text-align: center;
+    }
+  
+    #hero header {
+      margin-left: 0;
+      max-width: 100%;
+    }
+  
+    #hero h1 {
+      font-size: 3rem;
+    }
+  
+    .a, .highlight {
+      font-size: 1.8rem;
+    }
+  
+    #hero h2 {
+      font-size: 1.8rem;
+    }
+  
+    .resume-btn {
+      font-size: 1rem;
+      padding: 0.5rem 2.5rem;
+    }
+  
+    .home-image {
+      justify-content: center;
+    }
+  
+    /* Skillsets Section */
+    .skillsets-section h1 {
+      font-size: 2.5rem;
+    }
+  
+    .skillsets-section p {
+      font-size: 1.1rem;
+      padding: 0 30px;
+    }
+  
+    .skillsets-icons {
+      gap: 40px;
+    }
+  
+    .skillsets-icons img {
+      width: 70px;
+      height: 70px;
+    }
+  
+    /* Footer */
+    .footer-container {
+      gap: 5px;
+    }
+  
+    .footer-text {
+      font-size: 13px;
+    }
+  
+    .footer-icons img {
+      width: 22px;
+    }
+}
+/* =============== RESPONSIVE - MOBILE 480px =============== */
+@media (max-width: 480px) {
+  nav ul li {
+    margin: 0 0.4em; /* Tighter margins */
+  }
+/* Hero Section */
+    #hero {
+      flex-direction: column;
+      padding: 40px 20px;
+      gap: 20px;
+      text-align: center;
+    }
+  
+    #hero header {
+      margin-left: 0;
+      max-width: 100%;
+    }
+  
+    #hero h1 {
+      font-size: 2.5rem;
+    }
+  
+    .a, .highlight {
+      font-size: 1.5rem;
+    }
+  
+    #hero h2 {
+      font-size: 1.5rem;
+    }
+  
+    .resume-btn {
+      font-size: 1rem;
+      padding: 0.5rem 2rem;
+    }
+  
+    .home-image {
+      justify-content: center;
+    }
+  
+    /* Skillsets Section */
+    .skillsets-section h1 {
+      font-size: 2.2rem;
+    }
+  
+    .skillsets-section p {
+      font-size: 1rem;
+      padding: 0 15px;
+    }
+  
+    .skillsets-icons {
+      gap: 30px;
+    }
+  
+    .skillsets-icons img {
+      width: 60px;
+      height: 60px;
+    }
+  
+    /* Footer */
+    .footer-container {
+      gap: 10px;
+    }
+  
+    .footer-text {
+      font-size: 12px;
+    }
+  
+    .footer-icons img {
+      width: 20px;
+    }
+}
