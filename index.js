@@ -1,6 +1,6 @@
 // Function to open the default email client and start composing an email to the specified address
 function sendEmail() {
-    window.location.href="mailto: yng11@e.ntu.edu.sg";
+    window.location.href="mailto: yng118@e.ntu.edu.sg";
 }
 
 // Waits for the document to load before applying a fade-in effect to skill icons
