@@ -13,4 +13,4 @@ Click on portfolio items to explore project details.
 If you're interested in collaborating or have feedback on my site, feel free to reach out!
 
 LinkedIn: www.linkedin.com/in/ngyanming |
-Email: yng118@e.ntu.edu.sg
+Email: ngyanming.sg@gmail.com
